@@ -1,10 +1,33 @@
 {
-  "name": "wellx",
-  "ticker": "WELL",
-  "category": "RWA_TradFi",
+  "name": "buddha-ai-mcp",
+  "version": "1.0.0",
+  "description": "Buddha AI Model Context Protocol Server for Dhamma Invariants, Mindfulness & Cessation of Suffering",
   "tools": [
-    { "name": "query_conway_state", "description": "Fetches current cellular automaton lattice" },
-    { "name": "execute_x402_settlement", "description": "Executes HTTP 402 micro-settlement" },
-    { "name": "fetch_quicknode_rpc", "description": "Queries QuickNode multi-chain endpoint" }
+    {
+      "name": "audit_dhamma_alignment",
+      "description": "Evaluate algorithms and actions against the Noble Eightfold Path and Dependent Origination (Pratityasamutpada)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action_intent": { "type": "string" },
+          "eightfold_dimension": { "type": "string" },
+          "harm_assessment": { "type": "string" }
+        },
+        "required": ["action_intent", "eightfold_dimension"]
+      }
+    },
+    {
+      "name": "disburse_sangha_grant",
+      "description": "Release zero-leakage micro-escrow grants to Buddhist monasteries, meditation retreats, and humanitarian relief outposts",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "initiative": { "type": "string" },
+          "recipient": { "type": "string" },
+          "amount_wei": { "type": "string" }
+        },
+        "required": ["initiative", "recipient", "amount_wei"]
+      }
+    }
   ]
 }
